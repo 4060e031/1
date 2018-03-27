@@ -74,4 +74,44 @@ public class JVA108
   }
 }
 ====================================================
+#include<stdio.h>
+ 
+int main()
+{
+    int i,j,k;
+    printf("\n");
+    for(i=1;i<5;i++) { // 以下?三重循?
+        for(j=1;j<5;j++) {
+            for (k=1;k<5;k++) { // 确保i、j、k三位互不相同
+                if (i!=k&&i!=j&&j!=k) { 
+                    printf("%d,%d,%d\n",i,j,k);
+                }
+            }
+        }
+    }
+}
+======================================================
+ #include<iostream> 
+using namespace std; 
+int main(){ 
+int i, n; 
+long x, t, t1; 
+cout << "請輸入項數："; cin >> n; 
+for( i = 0; i < n; i++ ) { 
+if( i == 0 || i == 1 ){ 
+x = i; 
+t = 0; 
+t1 = 1; 
+} 
+else { 
+x = t + t1; 
+t = t1; 
+t1 = x; 
+} 
+cout << x << " "; 
+} 
+system("pause"); 
+return 0; 
+} 
+======================================================
 
