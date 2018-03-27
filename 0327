@@ -1,0 +1,77 @@
+c++
+c
+java
+================================================
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "Hello, world!" << endl;
+    return 0;
+}
+================================================
+#include <stdio.h>
+ 
+int main()
+{
+    /* 我的第一个 C 程序 */
+    printf("Hello, World! \n");
+ 
+    return 0;
+}
+================================================
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+=================================================
+#include <iostream>
+using namespace std;
+int main()
+{
+ int k=0;
+ while(k<5)
+ {
+  for(int i=1;i<=9;i++)
+  {
+   for(int j=2+k;j<6+k;j++)
+    cout<<j<<" x "<<i<<" = "<<j*i<<'\t';
+   cout<<endl;
+  }
+  cout<<endl;
+  k += 4;
+ }
+}
+===================================================
+#include <stdlib.h> 
+
+int main() 
+{ 
+for(int i=1;i<=9;i++) 
+{ 
+for(int j=1;j<=9;j++) 
+{ 
+printf("%dX%d=%d\t",i,j,i*j); 
+} 
+printf("\n"); 
+} 
+system("PAUSE"); 
+return 0; 
+}
+=====================================================
+import java.lang.*;
+
+public class JVA108
+{
+  public static void main(String[] args)                                         
+  {
+   for(int i = 1 ; i< 10 ; i++){
+      for(int j = 1 ; j <10 ; j++)
+         System.out.print(""+i+"*"+j+"="+(i*j)+"\t");
+      System.out.println();
+   }
+  }
+}
+====================================================
+
