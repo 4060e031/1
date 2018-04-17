@@ -35,3 +35,54 @@ int main()
   system("pause");  
   return 0;
 }
+===================================================================
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int A[3][3];
+	int B[3][3];
+	int C[3][3];
+	
+	int i,j;
+	
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			cout<<"A["<<i<<"]["<<j<<"]:";
+			cin>>A[i][j];				
+		 }
+		}	
+		
+		for(i=0;i<3;i++)
+		{
+			for(j=0;j<3;j++)
+		{
+			cout<<"B["<<i<<"]["<<j<<"]:";
+			cin>>B[i][j];				
+		 }
+		}	
+		
+		for(i=0;i<3;i++)
+		{
+			for(j=0;j<3;j++)
+			{
+				C[i][j]=A[i][j]+B[i][j];
+				
+			}
+		}
+		cout<<endl;
+		for(i=0;i<3;i++)
+		{
+			for(j=0;j<3;j++)
+			{
+				cout<<" "<<C[i][j]<<" ";
+			}
+			cout<<endl;
+		}
+		system("pause");
+		return 0 ;		
+ } 
+ =====================================================
