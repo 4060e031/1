@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+string s1("welcome");
+s1.append(" to c++");
+cout << s1 << endl;
+
+string s2("welcome");
+s2.append(" to c++",0, 5);
+cout << s2 << endl;
+
+string s3("welcome");
+s3.append(" to c++",5);
+cout << s3 << endl;
+
+string s4("welcome");
+s4.append(4, 'G');
+cout << s4 << endl;
+
+
+
+return 0;
+}
