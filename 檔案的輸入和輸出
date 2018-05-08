@@ -1,5 +1,29 @@
 #include <iostream>
 #include <fstream>
+using namespace std;
+
+int main()
+{
+  ofstream output;
+
+  // Create a file
+  output.open("bang.txt");
+
+  // Write two lines
+  output << "b" << " " << "a" << " " << "ng" 
+    << " " << 90 << endl;
+  output << "b" << " " << "a" << " " << "ng" 
+    << " " << 85 << endl;
+
+  output.close();
+
+  cout << "Done" << endl;
+
+  return 0;
+}
+==================================================================
+#include <iostream>
+#include <fstream>
 #include <string>
 using namespace std;
 
