@@ -4,7 +4,7 @@ void ShowMessage(); //函式宣告語句
 void ShowAge(); //函式宣告語句
 void ShowIndex(); //函式宣告語句
 
-void main()
+int main()
 {
 	ShowMessage(); //函式呼叫語句
 	ShowAge(); //函式呼叫語句
