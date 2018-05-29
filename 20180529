@@ -1,0 +1,52 @@
+#ifndef STACK_H
+#define STACK_H
+
+class StackOfIntegers 類別
+{
+public:    公開
+  StackOfIntegers(); 類別函數
+  bool isEmpty() const;
+  int peek() const;
+  void push(int value); 
+  int pop();          整數函數 POP
+  int getSize() const;  得到SIZE函數
+
+private:  隱藏
+  int elements[100];
+  int size;
+};
+
+#endif
+[2]實作==> StackOfIntegers.cpp
+
+#include "StackOfIntegers.h"
+
+StackOfIntegers::StackOfIntegers() 類別函數::建構質
+{
+  size = 0;   SIZE值設0
+}
+
+bool StackOfIntegers::isEmpty() const  布林函數 確認對錯
+{
+  return (size == 0);          回傳 確認SIZE為0 回傳T
+}
+
+int StackOfIntegers::peek() const   類別堆疊最上層值
+{
+  return elements[size - 1];  回傳SIZE-1陣列
+}
+
+void StackOfIntegers::push(int value)  不用回傳 放置陣列SIZE值++ 整數
+{
+  elements[size++] = value;
+}
+
+int StackOfIntegers::pop()   回傳整數 --SIZE值陣列
+{
+  return elements[--size];
+}
+
+int StackOfIntegers::getSize() const 得到SIZE值 回傳整數
+{
+  return size;
+}
