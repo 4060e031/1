@@ -1,19 +1,19 @@
 #ifndef STACK_H
 #define STACK_H
 
-class StackOfIntegers 類別
+class StackOfIntegers //類別名稱
 {
-public:    公開
-  StackOfIntegers(); 類別函數
-  bool isEmpty() const;
-  int peek() const;
-  void push(int value); 
-  int pop();          整數函數 POP
-  int getSize() const;  得到SIZE函數
+public:   // 公開 可以被存取
+  StackOfIntegers(); //建構值
+  bool isEmpty() const; //測試是否為空的函數
+  int peek() const; //堆疊最上層值的函數
+  void push(int value);  //把資料丟進去的函數
+  int pop();         // 取得最上層函數 POP
+  int getSize() const;  //得到堆疊大小的函數
 
 private:  隱藏
-  int elements[100];
-  int size;
+  int elements[100];  整數陣列大小100
+  int size; 設SIZE為整數
 };
 
 #endif
@@ -21,14 +21,14 @@ private:  隱藏
 
 #include "StackOfIntegers.h"
 
-StackOfIntegers::StackOfIntegers() 類別函數::建構質
+StackOfIntegers::StackOfIntegers() 類別建構質的實作
 {
-  size = 0;   SIZE值設0
+  size = 0;   產生 SIZE值設0
 }
 
-bool StackOfIntegers::isEmpty() const  布林函數 確認對錯
+bool StackOfIntegers::isEmpty() const  測試是否為空的函數
 {
-  return (size == 0);          回傳 確認SIZE為0 回傳T
+  return (size == 0);          回傳 確認SIZE為0 回傳T 否則0 此函數為布林函數
 }
 
 int StackOfIntegers::peek() const   類別堆疊最上層值
@@ -38,12 +38,12 @@ int StackOfIntegers::peek() const   類別堆疊最上層值
 
 void StackOfIntegers::push(int value)  不用回傳 放置陣列SIZE值++ 整數
 {
-  elements[size++] = value;
+  elements[size++] = value; SIZE++ = SIZE值=value回傳後 size+1
 }
 
 int StackOfIntegers::pop()   回傳整數 --SIZE值陣列
 {
-  return elements[--size];
+  return elements[--size]; --SIZE= SIZE-1值 回傳
 }
 
 int StackOfIntegers::getSize() const 得到SIZE值 回傳整數
